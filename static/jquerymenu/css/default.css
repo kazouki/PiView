@@ -1,0 +1,15 @@
+
+
+
+.btn-outline-primary, .btn-outline-primary:hover, .btn-outline-primary:active, .btn-outline-primary:visited {
+
+    /*
+    background-color: #8064A2;
+    */
+}
+
+.btn-outline-primary:hover {
+    opacity: 0.5;
+    color: #ffffff !important;
+
+}

@@ -1,0 +1,99 @@
+{% extends 'configure/source_base.html' %}
+
+
+{% load bootstrap4 %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+
+<!--{% load crispy_forms_field %}-->
+
+{% block source_right %}
+
+
+{% endblock %}
+
+
+{% block source_middle %}
+
+<script>
+function startRequests() {
+  document.getElementById("demo").style.visibility = 'visible';
+<!--  document.getElementById("startBtn").disabled = true;-->
+<!--  document.getElementById("startBtn").value = 'Processing...';-->
+<!--  document.getElementById("startBtn").disabled = true;-->
+}
+</script>
+
+<div class="card">
+    <div class="card-header">
+        <form method="POST" class="form-group" action="">
+            {% csrf_token %}
+            <center>
+                {% buttons %}
+<!--                <input type="submit" name="submit" value="Start Requests">-->
+                <input id="startBtn" class="btn btn-outline-primary" type="submit" name="submit" value="Start Requests" onclick="startRequests()">
+                {% endbuttons %}
+                <div style="visibility:hidden;" id="demo">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+            </center>
+
+
+        </form>
+    </div>
+
+
+
+
+<table class="table object-table">
+  <thead>
+    <tr>
+      <th scope="col">filtered</th>
+      <th scope="col">negative</th>
+      <th scope="col">positive</th>
+      <th scope="col">negative %</th>
+      <th scope="col">positive %</th>
+        <th scope="col">items</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>{{ filtered_word_total }}</td>
+        <td>{{ negative_word_total }}</td>
+        <td>{{ positive_word_total }}</td>
+        <td>{{ negative_word_perc|truncatechars:10 }}</td>
+        <td>{{ positive_word_perc|truncatechars:10 }}</td>
+        <td>{{ req_word_total }}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p></p>
+
+<div class="card">
+    <div class="card-header">
+    </div>
+        <table class="table object-table">
+  <thead>
+    <tr>
+      <th scope="col">Subdomains</th>
+     </tr>
+  </thead>
+  <tbody>
+    <tr>
+        {% for item in spider_url_list %}
+        <tr><td style="font-size:10px;">{{ item|truncatechars:100 }}</td></tr>
+        {% endfor %}
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+{% endblock %}

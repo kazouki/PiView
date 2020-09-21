@@ -1,0 +1,41 @@
+{% extends 'configure/source_base.html' %}
+
+
+{% block source_total %}
+
+
+
+
+<div class="container">
+    <div class="row">
+
+
+        {% for object in object_list %}
+            <div class="col-sm-2">
+
+                 <div class="card" style="width: auto; font-size: 10px">
+                     <h5 class="card-header" style="width: auto; font-size: 10px">{{ object.name|truncatechars:15 }}</h5>
+                        <div class="card-body">
+                            <strong>
+                                <em>
+                                    <h6 class="card-subtitle mb-2 text-muted" style="width: auto; font-size: 10px">{{ object.url|truncatechars:20 }}</h6>
+                                </em>
+                            </strong>
+                                <p class="card-text">{{ object.description|truncatechars:10 }}</p>
+                                    <a href="{% url 'configure:detail' pk=object.id %}" class="card-link">Open</a>
+                                    <a href="#" class="card-link">Delete</a>
+                        </div>
+                 </div>
+
+
+
+            </div>
+
+        {% endfor %}
+
+
+    </div>
+</div>
+
+
+{% endblock %}

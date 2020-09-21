@@ -1,0 +1,79 @@
+
+
+table.table-bordered{
+    /*
+    border:1px solid blue !important;
+
+    margin-top:20px !important;
+    */
+    background-color: #ffffff; !important;
+  }
+
+/*
+table.table-bordered > thead > tr > th{
+    border:1px solid blue !important;
+}
+*/
+
+/*
+table.table > tr {
+    border:1px solid blue !important;
+    border-color: #5790f0 !important;
+    background-color: #ffffff !important;
+    margin: 1px;
+    border-radius: 2px !important;
+*/
+
+.card {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-radius: 20px !important;
+    }
+
+
+#addTable {
+    margin-top: 8px;
+}
+
+
+
+#source-middle {
+    border: 2px solid blue;
+    border-color: #0088cc !important;
+    border-radius: 20px;
+/*
+
+    display: inline-block;
+
+
+    border: 5px solid white;
+    padding: 5px; !important;
+*/
+
+}
+
+table.object-table > tbody > tr > td > a {
+    text-decoration: none;
+}
+
+table.object-table > thead {
+
+
+}
+
+
+
+#addFields td {
+    height: 56px;
+    display: inline-block;
+    border-radius: 5px;
+
+    border: 5px solid white;
+    padding: 3px; !important;
+
+}​
+
+/*
+background-color: #369;
+    color: white;
+*/

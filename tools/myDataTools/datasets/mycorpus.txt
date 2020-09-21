@@ -1,0 +1,11 @@
+Human machine interface for lab abc computer applications
+A survey of user opinion of computer system response time
+The EPS user interface management system
+System and human system engineering testing of EPS
+Relation of user perceived response time to error measurement
+The generation of random binary unordered trees
+The intersection graph of paths in trees
+Graph minors IV Widths of trees and well quasi ordering
+Graph minors A survey
+
+I remember the first time I heard of Cardano. This weird ADA token that was the first new token listing on Bittrex in a while. I was at a birthday party but I posted up in my car with my phone logged into Bittrex and refreshing the ADA page. Bought it and sold it too soon — story of my life as a trader. Fortunately, the story does not end there as I transitioned from trading to actual development on multiple blockchains for the past year. This project has been shrouded by academia and very little in the way of useable products. I have recently been diving into the new KEVM and IELE testnets and learning how to deploy a smart contract on Cardano. Please give me feedback on this article and take everything said here with a large grain of salt!
